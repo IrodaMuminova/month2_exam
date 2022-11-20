@@ -32,7 +32,7 @@
   align-items: center;
 }
 
-@mixin before($top: 175px, $left: 100px) {
+@mixin before($top: 175px, $left: 140px) {
   position: absolute;
   top: $top;
   left: $left;
