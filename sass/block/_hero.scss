@@ -4,9 +4,13 @@
     background-image: url('../../images/Bitmap@2x.png');
     background-position: center;
     background-size: cover;
-    padding: 153px 0px 152px 11vh;
+    padding: 183px 0px 152px 11vh;
     position: relative;
     overflow: hidden;
+
+    &__container {
+        position: relative;
+    }
 
     &__scooter {
         @include paragraph;
@@ -23,24 +27,24 @@
         max-width: 405px;
         width: 100%;
     }
-    
+
     &__area--path2 {
         position: absolute;
-        right: 250px;
-        top: 370px;
+        right: 205px;
+        top: 200px;
         // width:446px;
         // height:90px;
     }
-    
+
     &__button {
         margin-left: 9vh;
-    
+
     }
-    
+
     &__area--path {
         position: absolute;
-        left: 0;
-        top: 370px;
+        left: -100px;
+        top: 200px;
     }
 }
 
@@ -49,8 +53,8 @@
     gap: 0 24px;
     position: absolute;
     right: -27px;
-    top: 443px;
-   
+    top: 273px;
+
 
     :nth-child(3) {
         background: #fff;
@@ -78,49 +82,50 @@
     .hero {
         background-image: url('../../images/Bitmap.png');
         padding: 0;
-        padding-top: 137px;
+        padding-top: 237px;
         padding-bottom: 217px;
+
         &__scooter {
             max-width: 573px;
             width: 100%;
             text-align: center;
             margin: 0 auto;
         }
-        
-            &__area--path {
-                top: 420px;
-                left: -100px;
-            }
-        
-            &__area--path2 {
-                top: 420px;
-                left: -100px;
-            }
-        
-            &__circle {
-                top: 513px;
-            }
-        
-            &__area--scoot {
-                max-width: 473px;
-                width: 100%;
-                margin: 0 auto;
-                text-align: center;
-            }
-        
-           &__button {
-        
-                margin-top: 32px;
-                margin-left: 30vh;
-                margin-right: 20vh;
-        
-            }
+
+        &__area--path {
+            top: 250px;
+            left: -100px;
+        }
+
+        &__area--path2 {
+            top: 250px;
+            left: -100px;
+        }
+
+        &__circle {
+            top: 343px;
+        }
+
+        &__area--scoot {
+            max-width: 473px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &__button {
+
+            margin-top: 32px;
+            margin-left: 40vh;
+            margin-right: 40vh;
+
+        }
     }
 
 }
 
 @media only screen and (max-width:375px) {
-    
+
     .hero .hero__circle {
         display: none;
     }
@@ -136,12 +141,12 @@
     }
 
     .hero__area--path {
-        top: 420px;
+        top: 270px;
         left: -300px;
     }
 
     .hero__area--path2 {
-        top: 420px;
+        top: 270px;
         left: -300px;
     }
 }

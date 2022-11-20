@@ -1,19 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     cursor: pointer;
 }
-li{
+
+li {
     list-style-type: none;
 }
-button{
+
+button {
     cursor: pointer;
 }
-body{
+
+body {
     @include font;
-   
+
 }

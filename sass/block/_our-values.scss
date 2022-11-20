@@ -18,6 +18,7 @@
 }
 
 .value__item--header {
+    margin: 0 auto;
     text-align: center;
     max-width: 350px;
     width: 100%;
@@ -27,78 +28,95 @@
 
 .value__item {
     position: relative;
+    text-align: center;
 }
-.value__item-box1::before{
+
+.value__item-box1::before {
     @include before;
     content: "01";
 }
-.value__item .value__item-box2::before{
-   @include before;
+
+.value__item .value__item-box2::before {
+    @include before;
     content: "02";
 }
-.value__item .value__item-box3::before{
+
+.value__item .value__item-box3::before {
     @include before;
     content: "03";
 }
 
 @media only screen and (max-width:768px) and (min-width:376px) {
-   
-  
-    .value__item-box1::before{
-      top:250px;
-      left: 250px;
+
+
+    .value__item-box1::before {
+        top: 250px;
+        left: 320px;
     }
-    .value__item .value__item-box2::before{
-        top:250px;
-        left: 250px;
+
+    .value__item .value__item-box2::before {
+        top: 250px;
+        left: 320px;
     }
-    .value__item .value__item-box3::before{
-        top:250px;
-        left: 250px;
+
+    .value__item .value__item-box3::before {
+        top: 250px;
+        left: 320px;
     }
-    .container{
+
+    .container {
         margin-left: 0;
         padding-left: 0;
         padding-right: 0;
         margin: 0 auto;
     }
-    .value__item-box{
-        max-width:457px ;
+
+    .value__item-box {
+        max-width: 457px;
         margin: 0 auto;
     }
+
     .value__list {
         display: block;
     }
-    .value__item-box{
+
+    .value__item-box {
         margin-top: 50px;
     }
-    .value__image{
+
+    .value__image {
         margin: 0;
         max-width: 307px;
         width: 100%;
-       margin-left: 20%;
 
     }
-.value__item-paragraph{
-    max-width: 457px;
-    width: 100%;
-}
+
+    .value__item-paragraph {
+        max-width: 457px;
+        width: 100%;
+    }
 
 
 }
+
 @media only screen and (max-width:375px) {
     .value__list {
         display: block;
         text-align: center;
     }
-    .value__item-box1::before{
-        left: 125px;
-      }
-      .value__item .value__item-box2::before{
-        left: 125px;
-      }
-      .value__item .value__item-box3::before{
-        left: 125px;
-      }
-    
+
+    .value__image {
+        margin-left: 0;
+    }
+
+    // .value__item-box1::before{
+    //     left: 125px;
+    //   }
+    //   .value__item .value__item-box2::before{
+    //     left: 125px;
+    //   }
+    //   .value__item .value__item-box3::before{
+    //     left: 125px;
+    //   }
+
 }
