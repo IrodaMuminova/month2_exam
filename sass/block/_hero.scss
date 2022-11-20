@@ -1,7 +1,14 @@
+@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-moz-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2), only screen and(min-resolution: 192dpi), only screen and (min-resolution:2dppx) {
+    .hero{
+        background-image: url('../../images/Bitmap@2x.png');
+    }
+}
+
+
 .hero {
     // margin-top: 93px;
     position: relative;
-    background-image: url('../../images/Bitmap@2x.png');
+    background-image: url('../../images/Bitmap.png');
     background-position: center;
     background-size: cover;
     padding: 183px 0px 152px 11vh;
